@@ -1,0 +1,30 @@
+:root{
+    --main-dark: #2C2C2C;
+    --main-light: #FFFFFF;
+    --accent: #7EB101;
+    --button: #BBF330;
+    --main-light-transparent: rgba(255, 255, 255, 0.5);
+    --shadow-fruit: #2F583F;
+    --secondary-bgd: #FFE550;
+    --main-bgd: #F5F5F5;
+    --secondary-accent: #A7CE47;
+    --text: #3D3D3D;
+    --secondary-text: #969696;
+    --third-text: #4A4A4A;
+    --main-font: 'Roboto', sans-serif;
+}
+body{
+    font-family: var(--main-font);
+    color: var(--dark-accent);
+    font-size: 16px;
+background-color:  var(--main-bgd);
+}
+.list{
+    list-style: none;
+    }
+.link{
+    text-decoration: none;
+}
+.button{
+    
+}
