@@ -15,7 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -63,34 +72,64 @@
             </p>
             <button class="button button-green" type="button">Order Now</button>
           </div>
-          <img
-            class="hero-img-bgd"
-            src="./img/hero-bgd.png"
-            alt="food"
-            width="580"
-            height="580"
-          />
-          <img
-            class="hero-img"
-            src="./img/hero-img.png"
-            alt=""
-            width="528"
-            height="528"
-          />
+
+          <!-- hero-slider -->
+
+          <div class="slider slick-slider fade">
+            <div>
+              <img
+                class="hero-img"
+                src="./img/hero-img.png"
+                alt=""
+                width="580"
+                height="580"
+              />
+            </div>
+            <div>
+              <img
+                class="hero-img"
+                src="./img/hero-img2.png"
+                alt=""
+                width="580"
+                height="580"
+              />
+            </div>
+            <div>
+              <img
+                class="hero-img"
+                src="./img/hero-img3.png"
+                alt=""
+                width="580"
+                height="580"
+              />
+            </div>
+               <!-- <svg class="arrow-left" width="16" height="29">
+            <use href="./img/icons/arrow-left.svg"></use>
+          </svg> -->
+          </div>
+        
         </div>
       </section>
 
       <!-- offerings section -->
       <section class="offerings-section section">
         <div class="container offerings-container">
-          <img class="offering-img" src="./img/foto2.png" alt="apple" width="550" height="604" />
+          <img
+            class="offering-img"
+            src="./img/foto2.png"
+            alt="apple"
+            width="550"
+            height="604"
+          />
           <div class="offerings-descr">
-            <h2 class="secondary-title offerings-title">What’s Special About Our Offerings</h2>
+            <h2 class="secondary-title offerings-title">
+              What’s Special About Our Offerings
+            </h2>
             <p class="text offerings-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique. Duis cursus, mi quis
-              viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-              vitae erat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
             </p>
             <ul class="list offerings-list">
               <li>
@@ -124,36 +163,59 @@
       <section class="section">
         <div class="container">
           <h2 class="secondary-title favorite-title">Some of Our Favorites</h2>
-          <p class="text favorite-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p=>
+          <p class="text favorite-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
           <ul class="list favorite-list">
             <li>
               <img
-                src="./img/gamburger.jpg"
+                class="favorite-img"
+                src="./img/gamburger.png"
                 alt="gamburger"
                 width="395"
                 height="397"
               />
             </li>
             <li>
-              <img src="./img/Pasta.jpg" alt="pasta" width="394" height="397" />
-            </li>
-            <li>
-              <img src="./img/pizza.jpg" alt="pizza" width="395" height="397" />
+              <img
+                class="favorite-img"
+                src="./img/Pasta.png"
+                alt="pasta"
+                width="394"
+                height="397"
+              />
             </li>
             <li>
               <img
-                src="./img/chicken.jpg"
+                class="favorite-img"
+                src="./img/pizza.png"
+                alt="pizza"
+                width="395"
+                height="397"
+              />
+            </li>
+            <li>
+              <img
+                class="favorite-img"
+                src="./img/chicken.png"
                 alt="chiken"
                 width="395"
                 height="397"
               />
             </li>
             <li>
-              <img src="./img/salat.jpg" alt="salat" width="394" height="397" />
+              <img
+                class="favorite-img"
+                src="./img/salat.png"
+                alt="salat"
+                width="394"
+                height="397"
+              />
             </li>
             <li>
               <img
-                src="./img/borshch.jpg"
+                class="favorite-img"
+                src="./img/borshch.png"
                 alt="borshch"
                 width="395"
                 height="397"
@@ -164,88 +226,151 @@
       </section>
 
       <!-- customers say -->
-      <section>
-        <h2>What our Customers Say</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <ul class="list">
-          <li>
-            <img src="./img/Stars.png" alt="stars" width="101" height="16" />
-            <p>
-              “The Best app I have used to order food in a while, so many
-              options to choose from too, I would recommend to a freind, No
-              questions asked”
-            </p>
-            <img
-              src="./img/avatar-1.svg"
-              alt="avatar-1"
-              width="48"
-              height="48"
-            />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
-          </li>
-          <li>
-            <img src="./img/Stars.png" alt="stars" width="101" height="16" />
-            <p>
-              “The ease with which I can just go in and order what i want was
-              amazing, It has been a very pleasant experience ordering from this
-              app”
-            </p>
-            <img
-              src="./img/avatar-2.svg"
-              alt="avatar-2"
-              width="48"
-              height="48"
-            />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
-          </li>
-        </ul>
+      <section class="section customer-section">
+        <div class="container">
+          <h2 class="secondary-title customer-title">What our Customers Say</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <ul class="list customer-list">
+            <li class="customer-item">
+              <svg class="customer-icon" width="101" height="16">
+                <use href="./img/icons.svg#icon-Stars"></use>
+              </svg>
+              <p class="text customer-text">
+                “The Best app I have used to order food in a while, so many
+                options to choose from too, I would recommend to a freind, No
+                questions asked”
+              </p>
+              <div class="customer-wrap">
+                <img
+                  src="./img/customer/customer1.png"
+                  alt="avatar-1"
+                  width="48"
+                  height="48"
+                />
+                <div class="customer-name-wrap">
+                  <h3 class="customer-name">Sumith Shah</h3>
+                  <p class="text customer-name-text">Some Dude</p>
+                </div class="text">
+              </div>
+            </li>
+            <li class="customer-item">
+              <svg class="customer-icon" width="101" height="16">
+                <use href="./img/icons.svg#icon-Stars"></use>
+              </svg>
+              <p class="text customer-text">
+                “The ease with which I can just go in and order what i want was
+                amazing, It has been a very pleasant experience ordering from this
+                app”
+              </p>
+              <div class="customer-wrap">
+                <img
+                  src="./img/customer/customer2.png"
+                  alt="avatar-2"
+                  width="48"
+                  height="48"
+                />
+                <div class="customer-name-wrap">
+                  <h3 class="customer-name">Sumith Shah</h3>
+                  <p class="text customer-name-text">Some Dude</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="customer-bgd"></div>
+
       </section>
 
       <!-- subscribe -->
-      <section>
-        <h2>Subscribe To Get Special Offers</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique.
-        </p>
-        <form action="">Enter your email</form>
-        <button class="button" type="button">Subscribe</button>
-        <img src="./img/banan.jpg" alt="banan" width="608" height="266" />
+      <section class="section">
+        <div class="container subscribe-container">
+          <div>
+            <h2 class="secondary-title" >Subscribe To Get Special Offers</h2>
+            <p class="text" >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              varius enim in eros elementum tristique.
+            </p>
+            <div class="subscribe-form-wrap">
+              <form >
+                <input 
+                class="subscribe-input" 
+                type="email" 
+                name="user-email" 
+                placeholder="Enter your email"
+                required
+                autocomplete="off">
+                       
+              </form>
+              <button class="button button-green button-subscribe" type="submit">Subscribe</button>
+            </div>
+
+          </div>
+          <img src="./img/banan.png" alt="banan" width="608" height="266" />
+        </div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer>
-      <div>
-        <a href=""
-          ><img src="./img/Vector.svg" alt="logo" width="66" height="52" />
-        </a>
-        <nav class="list">
-          <li><a class="link" href="">Home</a></li>
-          <li><a class="link" href="">About</a></li>
-          <li><a class="link" href="">Service</a></li>
-          <li><a class="link" href="">Menu</a></li>
-          <li><a class="link" href="">Contact</a></li>
-        </nav>
-
-        <form action="">Enter your email</form>
-        <button type="button">Subscribe</button>
-        <p>
-          By subscribing you agree to with our<a href=""> Privacy Policy</a>
-        </p>
-      </div>
-
-      <div>
-        <ul class="list">
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms of Service</a></li>
-          <li><a href="">Cookies Settings</a></li>
-        </ul>
-
-        <p>2022 FoodSta. All right reserved.</p>
+    <footer class="footer-section ">
+      <div class="container footer-container">
+        <div class="footer-nav-form">
+          <div class="footer-logo-nav">
+            <a class="link" href="#"
+              ><svg class="" width="66" height="52">
+                <use href="./img/icons.svg#icon-Logo" aria-label="logo" ></use>
+              </svg>
+              </a>
+            <nav class="list footer-nav">
+              <li><a class="link" href="#">Home</a></li>
+              <li><a class="link" href="#">About</a></li>
+              <li><a class="link" href="#">Service</a></li>
+              <li><a class="link" href="#">Menu</a></li>
+              <li><a class="link" href="#">Contact</a></li>
+            </nav>
+          </div>
+          <div class="footer-form">
+            <p class="text footer-form-text">Subscribe</p>
+            <div class="footer-form-wrap">
+              <form >
+                <input 
+                class="subscribe-input footer-input" 
+                type="email" 
+                name="user-email" 
+                placeholder="Enter your email"
+                required
+                autocomplete="off">
+                       
+              </form>
+              <button class="button light-button footer-button" type="submit">Subscribe</button>
+            </div>
+           
+            <p class="footer-privacy-text">
+              By subscribing you agree to with our&nbsp;<a class="footer-link" href=""> Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-privacy">
+          <ul class="list footer-privacy-list">
+            <li><a class="footer-link footer-privacy-text"href="#">Privacy Policy</a></li>
+            <li><a class="footer-link footer-privacy-text" href="#">Terms of Service</a></li>
+            <li><a class="footer-link footer-privacy-text" href="#">Cookies Settings</a></li>
+          </ul>
+          <p class="footer-privacy-text">2022 FoodSta. All right reserved.</p>
+        </div>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
