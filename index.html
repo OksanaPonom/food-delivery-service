@@ -30,33 +30,75 @@
   <body>
     <!-- header -->
     <header class="header-section">
-      <div class="header container">
-        <a class="link logo" href="./index.html">
-          <svg class="logo-icon" width="66" height="52">
-            <use href="./img/icons.svg#icon-Logo"></use>
-          </svg>
-        </a>
+      <div class="header">
+      
+          <a class="link logo" href="./index.html">
+            <svg class="logo-icon" width="66" height="52">
+              <use href="./img/icons.svg#icon-Logo"></use>
+            </svg>
+          </a>
+
         <div class="nav-menu">
-          <nav class="list nav-list">
-            <li class="nav-list-item">
-              <a class="link nav-link current" href="./index.html">Home</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="link nav-link" href="">About</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="link nav-link" href="">Service</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="link nav-link" href="">Menu</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="link nav-link" href="">Contact</a>
-            </li>
+          <nav>
+            <ul class="list nav-list">
+              <li class="nav-list-item">
+                <a class="link nav-link current" href="./index.html">Home</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="link nav-link" href="">About</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="link nav-link" href="">Service</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="link nav-link" href="">Menu</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="link nav-link" href="">Contact</a>
+              </li>
+            </ul>
           </nav>
-          <button class="button button-green" type="button">Order Now</button>
+          <button class="button button-green" type="button" data-modal-open>
+            Order Now
+          </button>
         </div>
-      </div>
+
+
+
+            <button class=" mobile-btn menu-burger-btn js-open-menu" 
+            type="button"
+            aria-label="open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg class="menu-burger" width="23" height="16">
+              <use href="./img/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
+        </div>
+
+
+
+       <div class="mobile-menu js-menu-container">
+        <nav>
+          <ul class="list mobile-menu-list">
+            <li class="mobile-menu-item"><a class="link mobile-menu-link" href=""></a>Home</li>
+            <li class="mobile-menu-item"><a class="link mobile-menu-link" href=""></a>About</li>
+            <li class="mobile-menu-item"><a class="link mobile-menu-link" href=""></a>Service</li>
+            <li class="mobile-menu-item"><a class="link mobile-menu-link" href=""></a>Menu</li>
+            <li class="mobile-menu-item"><a class="link mobile-menu-link" href=""></a>Contact</li>
+          </ul>
+        </nav>
+        <button class="mobile-btn mobile-menu-close-btn js-close-menu"
+        id="mobile-menu" 
+         aria-expanded="false"
+          aria-controls="mobile-menu"
+        aria-label="close">
+          <svg class="close-icon" width="10px" height="10px">
+            <use href="./img/icons.svg#icon-close-btn "></use>
+          </svg>
+        </button>
+       </div>
+      
     </header>
     <main>
       <!-- hero -->
@@ -70,7 +112,9 @@
               mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
               libero vitae erat.
             </p>
-            <button class="button button-green" type="button">Order Now</button>
+            <button class="button button-green" type="button" data-modal-open>
+              Order Now
+            </button>
           </div>
 
           <!-- hero-slider -->
@@ -103,11 +147,8 @@
                 height="580"
               />
             </div>
-               <!-- <svg class="arrow-left" width="16" height="29">
-            <use href="./img/icons/arrow-left.svg"></use>
-          </svg> -->
+          
           </div>
-        
         </div>
       </section>
 
@@ -153,14 +194,16 @@
                 </p>
               </li>
             </ul>
-            <button class="button light-button" type="button">Order Now</button>
+            <button class="button light-button" type="button" data-modal-open>
+              Order Now
+            </button>
           </div>
           <div class="offering-bgd"></div>
         </div>
       </section>
 
       <!-- favorite section  -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="secondary-title favorite-title">Some of Our Favorites</h2>
           <p class="text favorite-text">
@@ -223,13 +266,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- customers say -->
-      <section class="section customer-section">
+      <!-- <section class="section customer-section">
         <div class="container">
           <h2 class="secondary-title customer-title">What our Customers Say</h2>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
           <ul class="list customer-list">
             <li class="customer-item">
               <svg class="customer-icon" width="101" height="16">
@@ -250,7 +295,7 @@
                 <div class="customer-name-wrap">
                   <h3 class="customer-name">Sumith Shah</h3>
                   <p class="text customer-name-text">Some Dude</p>
-                </div class="text">
+                </div>
               </div>
             </li>
             <li class="customer-item">
@@ -259,8 +304,8 @@
               </svg>
               <p class="text customer-text">
                 “The ease with which I can just go in and order what i want was
-                amazing, It has been a very pleasant experience ordering from this
-                app”
+                amazing, It has been a very pleasant experience ordering from
+                this app”
               </p>
               <div class="customer-wrap">
                 <img
@@ -278,87 +323,170 @@
           </ul>
         </div>
         <div class="customer-bgd"></div>
-
-      </section>
+      </section> -->
 
       <!-- subscribe -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container subscribe-container">
           <div>
-            <h2 class="secondary-title" >Subscribe To Get Special Offers</h2>
-            <p class="text" >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique.
+            <h2 class="secondary-title">Subscribe To Get Special Offers</h2>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
             </p>
             <div class="subscribe-form-wrap">
-              <form >
-                <input 
-                class="subscribe-input" 
-                type="email" 
-                name="user-email" 
-                placeholder="Enter your email"
-                required
-                autocomplete="off">
-                       
+              <form>
+                <input
+                  class="subscribe-input"
+                  type="email"
+                  name="user-email"
+                  placeholder="Enter your email"
+                  required
+                  autocomplete="off"
+                />
               </form>
-              <button class="button button-green button-subscribe" type="submit">Subscribe</button>
+              <button
+                class="button button-green button-subscribe"
+                type="submit"
+              >
+                Subscribe
+              </button>
             </div>
-
           </div>
           <img src="./img/banan.png" alt="banan" width="608" height="266" />
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- footer -->
-    <footer class="footer-section ">
+    <!-- <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-nav-form">
           <div class="footer-logo-nav">
-            <a class="link" href="#"
-              ><svg class="" width="66" height="52">
-                <use href="./img/icons.svg#icon-Logo" aria-label="logo" ></use>
+            <a class="link logo" href="#"
+              ><svg class="logo-icon" width="66" height="52">
+                <use href="./img/icons.svg#icon-Logo" aria-label="logo"></use>
               </svg>
-              </a>
-            <nav class="list footer-nav">
-              <li><a class="link" href="#">Home</a></li>
-              <li><a class="link" href="#">About</a></li>
-              <li><a class="link" href="#">Service</a></li>
-              <li><a class="link" href="#">Menu</a></li>
-              <li><a class="link" href="#">Contact</a></li>
+            </a>
+            <nav>
+              <ul class="list footer-nav nav-menu">
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="#">About</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="link nav-link" href="#">Contact</a>
+                </li>
+              </ul>
             </nav>
           </div>
           <div class="footer-form">
             <p class="text footer-form-text">Subscribe</p>
             <div class="footer-form-wrap">
-              <form >
-                <input 
-                class="subscribe-input footer-input" 
-                type="email" 
-                name="user-email" 
-                placeholder="Enter your email"
-                required
-                autocomplete="off">
-                       
+              <form>
+                <input
+                  class="subscribe-input footer-input"
+                  type="email"
+                  name="user-email"
+                  placeholder="Enter your email"
+                  required
+                  autocomplete="off"
+                />
               </form>
-              <button class="button light-button footer-button" type="submit">Subscribe</button>
+              <button class="button light-button footer-button" type="submit">
+                Subscribe
+              </button>
             </div>
-           
+
             <p class="footer-privacy-text">
-              By subscribing you agree to with our&nbsp;<a class="footer-link" href=""> Privacy Policy</a>
+              By subscribing you agree to with our&nbsp;<a
+                class="footer-link"
+                href=""
+              >
+                Privacy Policy</a
+              >
             </p>
           </div>
         </div>
         <div class="footer-privacy">
           <ul class="list footer-privacy-list">
-            <li><a class="footer-link footer-privacy-text"href="#">Privacy Policy</a></li>
-            <li><a class="footer-link footer-privacy-text" href="#">Terms of Service</a></li>
-            <li><a class="footer-link footer-privacy-text" href="#">Cookies Settings</a></li>
+            <li>
+              <a class="footer-link footer-privacy-text" href="#"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a class="footer-link footer-privacy-text" href="#"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a class="footer-link footer-privacy-text" href="#"
+                >Cookies Settings</a
+              >
+            </li>
           </ul>
           <p class="footer-privacy-text">2022 FoodSta. All right reserved.</p>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- modal -->
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal is-hidden">
+        <button class="close-btn" aria-label="close" data-modal-close>
+          <svg class="close-icon" width="10px" height="10px">
+            <use href="./img/icons.svg#icon-close-btn "></use>
+          </svg>
+        </button>
+
+        <p class="form-title-text">Order Form</p>
+        <form class="modal-form">
+          <label class="modal-form-name"
+            >Name
+            <input
+              class="modal-form-input"
+              type="text"
+              required
+              placeholder="Your name"
+              pattern="[a-zA-Z]"
+              autocomplete="off"
+          /></label>
+          <label class="modal-form-name"
+            >Phone number
+            <input
+              class="modal-form-input"
+              type="tel"
+              required
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              autocomplete="off"
+              pattern="[1-9]"
+          /></label>
+          <label class="modal-form-name"
+            >E-mail
+            <input
+              class="modal-form-input"
+              type="email"
+              required
+              placeholder="example@gmail.com"
+              autocomplete="off"
+             
+          /></label>
+          <button type="submit" class="button light-button modal-button">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -372,5 +500,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
