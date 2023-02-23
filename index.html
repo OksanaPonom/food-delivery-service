@@ -62,9 +62,6 @@
             Order Now
           </button>
         </div>
-
-
-
             <button class=" mobile-btn menu-burger-btn js-open-menu" 
             type="button"
             aria-label="open menu"
@@ -75,9 +72,6 @@
             </svg>
           </button>
         </div>
-
-
-
        <div class="mobile-menu js-menu-container">
         <nav>
           <ul class="list mobile-menu-list">
@@ -98,12 +92,11 @@
           </svg>
         </button>
        </div>
-      
-    </header>
+      </header>
     <main>
       <!-- hero -->
-      <section class="hero-section">
-        <div class="container hero-container">
+      <section class="hero-section section">
+        <div class="hero-container ">
           <div class="hero-block">
             <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
             <p class="text hero-text">
@@ -121,31 +114,55 @@
 
           <div class="slider slick-slider fade">
             <div>
-              <img
+              <picture>
+                <source srcset="./img/hero/hero-img1-desk.png 1x, ./img/hero/hero-img1-desk@2x.png"
+                 media="(min-width:1200px)"
+                 sizes="580"
+                >
+                <source srcset="./img/hero/hero-img1-tabl.png 1x, ./img/hero/hero-img1-tabl@2x.png"
+                media="(min-width:768px)"
+                sizes="292">
+                <img
                 class="hero-img"
-                src="./img/hero-img.png"
+                src="./img/hero/hero-img1-tabl.png"
                 alt=""
-                width="580"
-                height="580"
+                loading="lazy"
               />
-            </div>
+                 </picture>
+            </div>            
             <div>
-              <img
+                    <picture>
+                <source srcset="./img/hero/hero-img2-desk.png 1x, ./img/hero/hero-img2-desk@2x.png"
+                 media="(min-width:1200px)" sizes="580"
+                >
+                <source srcset="./img/hero/hero-img2-tabl.png 1x, ./img/hero/hero-img2-tabl@2x.png"
+                media="(min-width:768px)" sizes="292">
+                <img
                 class="hero-img"
-                src="./img/hero-img2.png"
+                src="./img/hero/hero-img2-tabl.png"
                 alt=""
-                width="580"
-                height="580"
+               
+              
+                loading="lazy"
               />
-            </div>
+                 </picture>
+                      </div>
             <div>
-              <img
+                    <picture>
+                <source srcset="./img/hero/hero-img3-desk.png 1x, ./img/hero/hero-img3-desk@2x.png"
+                 media="(min-width:1200px)" sizes="580"
+                >
+                <source srcset="./img/hero/hero-img3-tabl.png 1x, ./img/hero/hero-img3-tabl@2x.png"
+                media="(min-width:768px)" sizes="292">
+                <img
                 class="hero-img"
-                src="./img/hero-img3.png"
+                src="./img/hero/hero-img3-tabl.png"
                 alt=""
-                width="580"
-                height="580"
+               
+                loading="lazy"
               />
+                    </picture>
+                       
             </div>
           
           </div>
@@ -153,16 +170,24 @@
       </section>
 
       <!-- offerings section -->
-      <section class="offerings-section section">
+      <!-- <section class="offerings-section section ">
         <div class="container offerings-container">
-          <img
-            class="offering-img"
-            src="./img/foto2.png"
-            alt="apple"
-            width="550"
-            height="604"
-          />
+          
+          <picture>
+            <source media="(min-width:320px)"
+            srcset="./img/offerings/offerings-img-mob@2x.png"
+            >
+            <img
+              class="offering-img"
+              src="./img/offerings/offerings-img-mob.png"
+              alt="apple"
+              width="550"
+              height="604"
+            />
+          </picture>
           <div class="offerings-descr">
+            
+          <div class="offerings-bgd"></div>
             <h2 class="secondary-title offerings-title">
               What’s Special About Our Offerings
             </h2>
@@ -198,9 +223,8 @@
               Order Now
             </button>
           </div>
-          <div class="offering-bgd"></div>
         </div>
-      </section>
+      </section> -->
 
       <!-- favorite section  -->
       <!-- <section class="section">
@@ -485,7 +509,7 @@
           </button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script
       type="text/javascript"
@@ -500,7 +524,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/slider.js"></script>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script> 
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
